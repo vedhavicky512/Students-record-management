@@ -38,7 +38,7 @@ def add_student(students):
     new_student = {"roll_no": roll_no, "name": name, "age": age, "marks": marks}
     students.append(new_student)
     save_data(students)
-    print(f"✅ Student {name} added successfully!")
+    print(f"Student {name} added successfully!")
 
 def view_students(students):
     print("\n--- Student Records ---")
@@ -64,10 +64,10 @@ def update_student(students):
             new_marks = input("Enter New Marks: ")
             s["marks"] = new_marks
             save_data(students)
-            print("✅ Marks updated successfully!")
+            print("Marks updated successfully!")
             return
             
-    print("❌ Student not found.")
+    print("Student not found.")
 
 def delete_student(students):
     print("\n--- Delete Student ---")
@@ -78,10 +78,10 @@ def delete_student(students):
             deleted_name = students[i]["name"]
             del students[i]
             save_data(students)
-            print(f"✅ Student {deleted_name} deleted successfully!")
+            print(f"Student {deleted_name} deleted successfully!")
             return
             
-    print("❌ Student not found.")
+    print("Student not found.")
 
 def main():
   
@@ -111,7 +111,7 @@ def main():
             print("\nExiting program. Thanks and Have a Great Day !")
             break
         else:
-            print("❌ Invalid choice. Please enter a number between 1 and 5.")
+            print("Invalid choice. Please enter a number between 1 and 5.")
 
 if __name__ == "__main__":
     main()
